@@ -177,3 +177,52 @@ body {
     height: 100px;
     margin-right: 10px;
 }
+
+@media screen and (max-width: 980px) {
+
+    body {
+        margin: 0;
+        min-width: 0;
+    }
+
+    .topo.direita {
+        display: none;
+    }
+
+    .topo {
+        background: #fdf6be;
+        width: 100vw;
+    }
+
+    .principal {
+        background: none;
+        flex-direction: column;
+    }
+
+    .principal.direita,
+    .principal.esquerda {
+        width: 100vw;
+    }
+
+    .principal.direita {
+        background: #a29750;
+    }
+
+    .principal.esquerda {
+        background: #6e672c;
+    }
+
+    .topo.esquerda {
+        margin: 0;
+        padding: 0;
+        height: 250px;
+        position: static;
+        background: none;
+    }
+
+    .depoimento {
+        position: absolute;
+        top: 50px;
+        right: 0;
+    }
+}
