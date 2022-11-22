@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-html {}
+html {
+    font-size: 62.5%;
+}
 
 a {
     text-decoration: none;
@@ -19,7 +21,6 @@ body {
     width: 90vw;
     min-width: 980px;
     margin: 0 auto;
-    font-size: 62.5%;
 }
 
 .topo {
@@ -131,10 +132,16 @@ body {
 
 .principal.direita {
     background: url("../imagens/bg-area-principal.png") top left repeat-x;
+    font-size: 1.2rem;
+}
+
+.principal.direita h2 {
+    font-size: 1.6rem;
 }
 
 .principal.esquerda {
     background: url("../imagens/bg-area-lateral.png") top left repeat-x;
+    font-size: 1.2rem;
     padding: 20px;
 }
 
@@ -155,13 +162,13 @@ body {
 
 .conteudo-lateral h3 {
     color: #615b2d;
-    font-size: 16px;
+    font-size: 1.6rem;
     position: absolute;
     left: 170px;
 }
 
 .conteudo-lateral p {
-    font-size: 12px;
+    font-size: 1.2rem;
     position: absolute;
     left: 170px;
     top: 30px;
@@ -180,13 +187,13 @@ body {
 
 @media screen and (max-width: 980px) {
 
+    html {
+        font-size: 50%;
+    }
+
     body {
         margin: 0;
         min-width: 0;
-    }
-
-    .topo.direita {
-        display: none;
     }
 
     .topo {
@@ -194,22 +201,8 @@ body {
         width: 100vw;
     }
 
-    .principal {
-        background: none;
-        flex-direction: column;
-    }
-
-    .principal.direita,
-    .principal.esquerda {
-        width: 100vw;
-    }
-
-    .principal.direita {
-        background: #a29750;
-    }
-
-    .principal.esquerda {
-        background: #6e672c;
+    .topo.direita {
+        display: none;
     }
 
     .topo.esquerda {
@@ -223,6 +216,29 @@ body {
     .depoimento {
         position: absolute;
         top: 50px;
-        right: 0;
+        right: 5px;
+    }
+
+    .locais-reservar {
+        margin: 10px 20px;
+        padding: 0px 3px;
+    }
+
+    .principal {
+        background: none;
+        flex-direction: column;
+    }
+
+    .principal.direita,
+    .principal.esquerda {
+        width: 100vw;
+    }
+
+    .principal.direita {
+        background: #efeacc;
+    }
+
+    .principal.esquerda {
+        background: #ded9b7;
     }
 }
