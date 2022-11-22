@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+body {
+    font-family: Helvetica, "Trebuchet MS", sans-serif;
+    width: 90vw;
+    min-width: 980px;
+    margin: 0 auto;
+    font-size: 62.5%;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.topo.direita {
+    background: url("../imagens/topo-imagem-principal.png") no-repeat;
+    height: 250px;
+    width: 100%;
+}
+
+.logo {
+    width: 151px;
+    height: 66px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.topo.esquerda {
+    background: url("../imagens/topo-imagem-lateral.png") no-repeat;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 250px;
+    width: 490px;
+    padding-left: 90px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+.locais-reservar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 20px;
+    border-top: 1px solid #b5ab56;
+    border-bottom: 1px solid #b5ab56;
+}
+
+.locais,
+.reservar {
+    font-size: 1.0em;
+    margin: 5px 0;
+}
+
+.locais {
+    color: #8b8448;
+}
+
+.reservar {
+    background-color: #a29750;
+    color: #fff5b0;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.menu-depoimento {
+    display: flex;
+    height: 206px;
+    align-items: center;
+}
+
+.menu {
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.menu li {
+    padding: 5px 0;
+}
+
+.menu a {
+    color: #6e672c;
+    padding: 5px;
+}
+
+.menu a:hover {
+    background-color: #fdf6be;
+}
+
+.depoimento {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.principal {
+    background: url("../imagens/bg-container.png") center;
+    display: flex;
+}
+
+.principal.esquerda,
+.principal.direita {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px;
+}
+
+.principal.direita {
+    background: url("../imagens/bg-area-principal.png") top left repeat-x;
+}
+
+.principal.esquerda {
+    background: url("../imagens/bg-area-lateral.png") top left repeat-x;
+    padding: 20px;
+}
+
+.conteudo-lateral {
+    background: url("../imagens/ornamento.png") top right no-repeat;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;
+    height: 120px;
+    border-bottom: 1px solid #FFF;
+}
+
+.conteudo-lateral:hover {
+    background-color: #f6f3d6;
+}
+
+.conteudo-lateral h3 {
+    color: #615b2d;
+    font-size: 16px;
+    position: absolute;
+    left: 170px;
+}
+
+.conteudo-lateral p {
+    font-size: 12px;
+    position: absolute;
+    left: 170px;
+    top: 30px;
+}
+
+.conteudo-lateral a {
+    color: #000;
+}
+
+.imagem-lateral {
+    float: left;
+    width: 150px;
+    height: 100px;
+    margin-right: 10px;
+}
