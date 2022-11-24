@@ -184,3 +184,84 @@ label.data {
 }
 
 /*----------MEDIA QUERIES----------*/
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        background-image: none;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #video {
+        width: 100%;
+
+    }
+
+    .mapa {
+        width: 100%;
+        height: 200px;
+    }
+
+    #mapa {
+        width: 100%;
+        height: 300px;
+    }
+
+    header.cabecalho {
+        background: #262318;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0 4%;
+    }
+
+    .container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .conteudo-lateral {
+        width: 100%;
+    }
+
+    .img-museu {
+        display: none;
+    }
+
+    article {
+        max-height: 250px;
+    }
+
+    .conteudo-principal {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #burger {
+        flex-direction: column;
+    }
+
+    .burger {
+        background-color: #CCC;
+        width: 30px;
+        height: 4px;
+        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+
+    .conteudo-lateral {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .conteudo-lateral img {
+        width: 100%;
+    }
+
+    #galeria {
+        margin: 0;
+    }
+}
