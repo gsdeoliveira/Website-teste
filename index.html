@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -10,68 +10,95 @@
 </head>
 
 <body>
-    <header class="topo">
-        <div class="topo direita">
-            <img class="logo" src="./imagens/logo.png" alt="Logo - Chalé Hotel">
-        </div>
-        <div class="topo esquerda">
-            <div class="locais-reservar">
-                <span class="locais">Rio de Janeiro - São Paulo - Salvador</span>
-                <a class="reservar">Reservar</a>
-            </div>
-            <div class="menu-depoimento">
-                <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">História</a></li>
-                    <li><a href="#">Gastronomia</a></li>
-                    <li><a href="#">Contato</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-                <img class="depoimento" src="./imagens/depoimento.png" alt="">
-            </div>
-        </div>
+
+    <header class="cabecalho">
+
+        <h1>Museu <span>Nacional</span></h1>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">Exposições</a>
+            <a href="#">Pesquisa</a>
+            <a href="#">Acervo</a>
+            <a href="#">Videos</a>
+            <a href="#">Fotos</a>
+            <a href="#">Contato</a>
+        </nav>
+
     </header>
-    <main class="principal">
-        <div class="principal direita">
-            <h2>Lorem ipsum dolor sit amet consectetur</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sunt optio veniam libero recusandae,
-                repudiandae distinctio! Voluptatibus explicabo, itaque dolorem dolorum expedita voluptate doloribus,
-                enim quis rerum nobis officia voluptatum</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sunt optio veniam libero recusandae,
-                repudiandae distinctio! Voluptatibus explicabo, itaque dolorem dolorum expedita voluptate doloribus,
-                enim quis rerum nobis officia voluptatum</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sunt optio veniam libero recusandae,
-                repudiandae distinctio! Voluptatibus explicabo, itaque dolorem dolorum expedita voluptate doloribus,
-                enim quis rerum nobis officia voluptatum</p>
-        </div>
-        <div class="principal esquerda">
-            <div class="conteudo-lateral">
-                <a href="#">
-                    <img class="imagem-lateral" src="./imagens/apartamento.jpg" alt="imagem do apartamento">
-                    <h3>Apartamento</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Lorem ipsum dolor sit amet consectetur
-                        adipisicing elitLorem ipsum dolor sit amet consectetur</p>
-                </a>
-            </div>
-            <div class="conteudo-lateral">
-                <a href="#">
-                    <img class="imagem-lateral" src="./imagens/restaurante.jpg" alt="imagem do restaurante">
-                    <h3>Restaurante</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                </a>
-            </div>
-            <div class="conteudo-lateral">
-                <a href="#">
-                    <img class="imagem-lateral" src="./imagens/piscina.jpg" alt="imagem da piscina" height="120px">
-                    <h3>Piscina</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                </a>
-            </div>
-        </div>
-    </main>
+
+    <div class="container">
+        <main class="conteudo-principal">
+
+            <img src="./img/museu.png" class="img-museu" alt="Imagem exibindo o Museu Nacional">
+            <article>
+                <h2>Vídeo: conheça o museu</h2>
+                <iframe width="340" height="200" src="https://www.youtube.com/embed/RGUYb-hivrc"
+                    title="Uma visita mediada ao Museu Nacional - UFRJ" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </article>
+
+            <article>
+                <h2>Mapa: encontre o museu</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14700.825245036422!2d-43.226529!3d-22.905760000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1669306087427!5m2!1spt-BR!2sbr"
+                    width="340" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+
+            <article>
+                <h2>Exposições</h2>
+                <ul>
+                    <li><a href="#">Os assustadores insetos</a></li>
+                    <li><a href="#">O crânio de Luzia, a mulher mais antiga do Brasil</a></li>
+                    <li><a href="#">Preguiça gigante e tigre-dentes-de-sabre</a></li>
+                    <li><a href="#">Plantas do Brasil Central</a></li>
+                    <li><a href="#">Tereza Cristina: A Imperatriz Arqueóloga</a></li>
+                    <li><a href="#">Arte Com Dinossauros - Paleoarte</a></li>
+                    <li><a class="ultimo" href="">Veja todos (65)</a></li>
+                </ul>
+            </article>
+
+            <article>
+                <h2>200 anos de história</h2>
+                <p>Numa ponta que avançava sobre o mar, posteriormente conhecida como Ponta do Calabouço, entre as
+                    praias de
+                    Piaçaba e Santa Luzia, no centro histórico do Rio de Janeiro, os portugueses construíram em 1603 a
+                    Fortaleza de Santiago, origem do conjunto arquitetônico que hoje abriga o Museu Histórico Nacional.
+                </p>
+                <a class="ultimo" href="#">Leia mais</a>
+            </article>
+
+        </main>
+
+        <aside class="conteudo-lateral">
+            <img src="./img/depoimento.png" alt="Comentário da direção do museu resaltando a importância dele">
+            <section class="visita">
+                <h3>Faça uma visita</h3>
+                <form id="form-visita" action="#">
+                    <label for="data" class="data">Data</label>
+                    <input type="date" name="data" id="data" class="data">
+
+                    <label for="quant">Quantidade de pessoas</label>
+                    <input type="text" name="quant" id="quant">
+
+                    <button class="btn" type="submit">Verificar disponibilidade</button>
+                </form>
+            </section>
+            <section id="galeria">
+                <h3>Galeria de Fotos</h3>
+                <a href="#"><img src="./img/imagem1.jpg" alt="imagem 1" class="img-galeria"></a>
+                <a href="#"><img src="./img/imagem2.jpg" alt="imagem 2" class="img-galeria"></a>
+                <a href="#"><img src="./img/imagem3.jpg" alt="imagem 3" class="img-galeria"></a>
+                <a href="#"><img src="./img/imagem4.jpg" alt="imagem 4" class="img-galeria"></a>
+            </section>
+        </aside>
+    </div>
+
     <footer>
 
     </footer>
+
 </body>
 
 </html>
